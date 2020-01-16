@@ -133,6 +133,7 @@
 		6D73B082C20E892DBC931F5D /* Pods-BluejayHeartSensorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluejayHeartSensorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BluejayHeartSensorDemo/Pods-BluejayHeartSensorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6D8D558D0951A33AECAED2CE /* Pods-BluejayHeartSensorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluejayHeartSensorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BluejayHeartSensorDemo/Pods-BluejayHeartSensorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		916C6338CC4E6D8DBA1A561C /* Pods-Bluejay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluejay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bluejay/Pods-Bluejay.debug.xcconfig"; sourceTree = "<group>"; };
+		9179B09623D06EFF00AD45E8 /* Bluejay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bluejay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991CB1FE3605BDCF2951EEF8 /* Pods-DittojayHeartSensorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittojayHeartSensorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DittojayHeartSensorDemo/Pods-DittojayHeartSensorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B4F875274536E6A2FACE6253 /* Pods_DittojayHeartSensorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DittojayHeartSensorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8022D971E1EEED900EA360B /* WriteResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteResult.swift; sourceTree = "<group>"; };
@@ -216,6 +217,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9179B09323D06EFF00AD45E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8383B5A21C3162800F07306 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,6 +409,7 @@
 				B8C70F751E1C22850006CF58 /* Bluejay.framework */,
 				B8383B5D21C3162800F07306 /* BluejayHeartSensorDemo.app */,
 				B87FDD5E21E567150010D6CF /* DittojayHeartSensorDemo.app */,
+				9179B09623D06EFF00AD45E8 /* Bluejay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -483,6 +492,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		9179B09123D06EFF00AD45E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8C70F721E1C22850006CF58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,6 +510,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9179B09523D06EFF00AD45E8 /* Bluejay (watchOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9179B09D23D06EFF00AD45E8 /* Build configuration list for PBXNativeTarget "Bluejay (watchOS)" */;
+			buildPhases = (
+				9179B09123D06EFF00AD45E8 /* Headers */,
+				9179B09223D06EFF00AD45E8 /* Sources */,
+				9179B09323D06EFF00AD45E8 /* Frameworks */,
+				9179B09423D06EFF00AD45E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bluejay (watchOS)";
+			productName = "Bluejay (watchOS)";
+			productReference = 9179B09623D06EFF00AD45E8 /* Bluejay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B8383B5C21C3162800F07306 /* BluejayHeartSensorDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8383B6E21C3162A00F07306 /* Build configuration list for PBXNativeTarget "BluejayHeartSensorDemo" */;
@@ -566,9 +600,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Steamclock Software";
 				TargetAttributes = {
+					9179B09523D06EFF00AD45E8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = 56DQ8B5T2R;
+						ProvisioningStyle = Automatic;
+					};
 					B8383B5C21C3162800F07306 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = GH868RP95T;
+						DevelopmentTeam = 56DQ8B5T2R;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -579,7 +618,7 @@
 					};
 					B87FDD5D21E567150010D6CF = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = GH868RP95T;
+						DevelopmentTeam = 56DQ8B5T2R;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -610,6 +649,7 @@
 			projectRoot = "";
 			targets = (
 				B8C70F741E1C22850006CF58 /* Bluejay */,
+				9179B09523D06EFF00AD45E8 /* Bluejay (watchOS) */,
 				B8383B5C21C3162800F07306 /* BluejayHeartSensorDemo */,
 				B87FDD5D21E567150010D6CF /* DittojayHeartSensorDemo */,
 			);
@@ -617,6 +657,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9179B09423D06EFF00AD45E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8383B5B21C3162800F07306 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -757,6 +804,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9179B09223D06EFF00AD45E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8383B5921C3162800F07306 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -891,6 +945,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9179B09B23D06EFF00AD45E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 56DQ8B5T2R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Bluejay/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steamclock.Bluejay;
+				PRODUCT_MODULE_NAME = Bluejay;
+				PRODUCT_NAME = Bluejay;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		9179B09C23D06EFF00AD45E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 56DQ8B5T2R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Bluejay/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steamclock.Bluejay;
+				PRODUCT_MODULE_NAME = Bluejay;
+				PRODUCT_NAME = Bluejay;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 		B8383B6C21C3162A00F07306 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D8D558D0951A33AECAED2CE /* Pods-BluejayHeartSensorDemo.debug.xcconfig */;
@@ -903,7 +1018,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GH868RP95T;
+				DEVELOPMENT_TEAM = 56DQ8B5T2R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = BluejayHeartSensorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -914,7 +1029,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -930,7 +1045,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GH868RP95T;
+				DEVELOPMENT_TEAM = 56DQ8B5T2R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = BluejayHeartSensorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -940,7 +1055,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -956,7 +1071,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GH868RP95T;
+				DEVELOPMENT_TEAM = 56DQ8B5T2R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = DittojayHeartSensorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -966,7 +1081,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.steamclock.DittojayHeartSensorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -982,7 +1097,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GH868RP95T;
+				DEVELOPMENT_TEAM = 56DQ8B5T2R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = DittojayHeartSensorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -991,7 +1106,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.steamclock.DittojayHeartSensorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1131,6 +1246,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1154,12 +1270,22 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9179B09D23D06EFF00AD45E8 /* Build configuration list for PBXNativeTarget "Bluejay (watchOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9179B09B23D06EFF00AD45E8 /* Debug */,
+				9179B09C23D06EFF00AD45E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B8383B6E21C3162A00F07306 /* Build configuration list for PBXNativeTarget "BluejayHeartSensorDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
